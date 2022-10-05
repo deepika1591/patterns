@@ -21,3 +21,125 @@ public class Main {
         
     }
 }
+
+2.
+*
+**
+***
+****
+
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+       Scanner sc= new Scanner(System.in);
+        int N = sc.nextInt();
+         for(int i =0;i<=N;i++){
+            for(int j=0;j<=i;j++){
+              System.out.print("*");  
+            }
+            System.out.println();
+        }
+        
+  3. 
+1
+1 2
+1 2 3
+1 2 3 4
+
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+       Scanner sc= new Scanner(System.in);
+        int N = sc.nextInt();
+        for(int i =1;i<=N;i++){
+            for(int j=1;j<=i;j++){
+              System.out.print(j);  
+            }
+            System.out.println();
+        }   
+    }
+}
+
+4.
+1
+1_
+1_3
+1_3_
+1_3_5
+
+_ is space
+
+ans
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+       Scanner sc= new Scanner(System.in);
+        int N = sc.nextInt();
+        for(int i =1;i<=N;i++){
+            for(int j=1;j<=i;j++){
+              if (j%2==0){
+                System.out.print(" ");
+              }
+              else 
+              System.out.print(j);  
+            }
+            System.out.println();
+        }
+        
+    }
+}
+5.
+****
+***
+**
+*
+ans
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+       Scanner sc= new Scanner(System.in);
+        int N = sc.nextInt();
+        for(int i =N;i>0;i--){
+            for(int j=i;j>0;j--){
+              System.out.print("*");  
+            }
+            System.out.println();
+        }
+        
+    }
+}
+6.
+
+____*
+___**
+__***
+_****
+*****
+ans.
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+       Scanner sc= new Scanner(System.in);
+        int N = sc.nextInt();
+        for(int i =1;i<=N;i++){
+            for(int j=i;j<=(N-1);j++){
+              System.out.print(" ");  
+            }
+            for(int j=1;j<=i;j++){
+              System.out.print("*");  
+            }
+            System.out.println();
+        }
+        
+    }
+}
