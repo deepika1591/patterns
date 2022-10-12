@@ -1,0 +1,36 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main{
+     public static void main(String[]args){
+       Scanner sc= new Scanner(System.in);
+       int N =sc.nextInt();
+       
+       int c;
+       for(int i=1;i<=N;i++){
+           for(int j=1;j<=(N-i);j++){
+               System.out.print("0");
+           }
+           for(int j=1;j<=1;j++){
+               System.out.print(i);
+           }
+                int z=i;
+           for(int j=1;j<=(i-1);j++){
+               z++;
+               System.out.print(z);
+           }
+           for(int j=1;j<=(i-1);j++){
+                  z--;
+                 c=z;
+               System.out.print(c);
+           }
+           for(int j=1;j<=(N-i);j++){
+               System.out.print("0");
+           }
+           
+          System.out.println(); 
+       }
+   
+     }  
+       
+}
